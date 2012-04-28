@@ -1,0 +1,17 @@
+﻿.yummyFood 
+{
+  width: 300px;
+}
+
+.recipe ul 
+{
+  margin: 0;
+  padding: 0;
+}
+
+.recipe li
+{
+  list-style-type: none;
+  border-bottom: 1px solid #555;
+  padding: 5px 0;
+}
