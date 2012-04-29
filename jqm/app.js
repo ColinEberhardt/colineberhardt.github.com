@@ -1,4 +1,8 @@
-﻿var isWindowsPhone = navigator.userAgent.indexOf("Windows Phone OS 7.5") != -1;
+﻿
+
+var isWindowsPhone = navigator.userAgent.indexOf("Windows Phone OS 7.5") !== -1;
+
+window.alert(navigator.userAgent);
 
 if (isWindowsPhone) {
  // $.mobile.ajaxEnabled = false;
