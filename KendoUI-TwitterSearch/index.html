@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- required libraries -->
+  <link href="styles/kendo.mobile.all.min.css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/kendo.mobile.min.js"></script>
+
+  <!-- the various view models -->
+  <script type="text/javascript" src="viewModel/TwitterSearchService.js"></script>
+  <script type="text/javascript" src="viewModel/TwitterSearchViewModel.js"></script>
+  <script type="text/javascript" src="viewModel/SearchResultsViewModel.js"></script>
+  <script type="text/javascript" src="viewModel/TweetViewModel.js"></script>
+    
+  <!-- some simple styling for the twitter view -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <script id="recentSearchTemplate" type="text/x-kendo-template">
+    <a>
+      <span data-bind="text:searchString"></span>
+    </a>
+  </script>
+
+  <!-- ### A page that renders the TwitterSearchViewModel -->
+  <div data-role="view" data-model="twitterSearchViewModel">
+    <header data-role="header">
+      <div data-role="navbar">
+        <span data-role="view-title">Twitter Search</span>
+      </div>
+    </header>
+      <!-- search form -->
+      <form data-bind="events: { submit: executeSearch }">
+        <input type="search" data-bind="value: searchTerm" data-value-update="keyup"
+              class="search-box"/>
+        <a data-role="button" class="full-width-button"
+            data-bind="click: executeSearch, { disabled: searchButtonDisabled }">Go</a>  
+      </form>
+      
+      <p class="userMessage" data-bind="visible: isSearching">
+        Loading ...
+      </p>
+
+      <p class="userMessage" data-bind="text: userMessage" />
+
+      <!-- recent searches -->
+      <h3 data-bind="visible: recentSearchTitleVisible">Recent Searches</h3>
+      <ul data-role="listview" 
+          data-style="inset"
+          data-template="recentSearchTemplate"
+          data-bind="source: recentSearches, events: { click:recentSearchClicked }">
+    </ul>
+    </div>
+  </div>
+
+  <script id="tweetTemplate" type="text/x-kendo-template">
+    <a>
+      <div class="thumbnail-container">
+        <img data-bind="attr: { src: thumbnail }" />
+      </div>
+      <h3 class="ui-li-heading">#= author#</h3>
+      <p class="ui-li-desc">#= text#</p>
+    </a>
+  </script>
+
+  <!-- ### A page that renders the SearchResultsViewModel -->
+  <div data-role="view" data-model="searchResultsViewModel" id="searchResultsView">
+    <header data-role="header">
+      <div data-role="navbar">
+        <a data-role="backbutton" data-align="left">Back</a>
+        <span data-role="view-title">Results</span>
+      </div>
+    </header>
+    <ul data-role="listview" 
+        data-template="tweetTemplate"
+        data-bind="source: tweets, events: { click: tweetClicked }">
+    </ul>
+    <!-- load more item -->
+    <ul class="km-listview km-list">
+      <li class="border-top">
+        <a data-bind="click:loadMore"
+           class="km-listview-link">
+          <h3 class="ui-li-heading" data-bind="text: loadMoreText"></h3>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ### A page that renders the TweetViewModel -->
+  <div data-role="view" data-model="tweetViewModel" id="tweetView">
+    <header data-role="header">
+      <div data-role="navbar">
+        <a data-role="backbutton" data-align="left">Back</a>
+        <span data-role="view-title"  data-bind="text: author"></span>
+      </div>
+    </header>
+    <!-- a simple tweet view -->
+    <div class="tweet">
+      <div class="thumbnailColumn">
+        <img data-bind="attr: { src: thumbnail }" class="thumbnail" />
+      </div>
+      <div class="detailsColumn">
+        <div class="author" data-bind="text: author"></div>
+        <div class="text" data-bind="text: text"></div>
+        <div class="time" data-bind="text: time"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- the code that puts it all together -->
+  <script type="text/javascript" src="app.js" ></script>
+
+</body>
+</html>
