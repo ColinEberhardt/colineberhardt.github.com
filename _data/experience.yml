@@ -1,19 +1,20 @@
 # Jobs
-# Springfield Nuclear Power Plant
-- company: Springfield Nuclear Power Plant
-  position: Safety Inspector
-  duration: Nov, 1980 &mdash; Present
-  summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points	<ul class="resume-item-list"><li>Ate lots of donuts</li><li>Fell asleep rarely</li><li>Left promptly at end of day (sometimes earlier)</li></ul>
+- company: Scott Logic
+  position: Technology Director
+  duration: 2006 &mdash; present
+  summary: <p>I joined Scott Logic as a Senior Developer in 2006. Over the following years I built trading platforms, research portals and middle-office systems for a wide range of clients including Lehman Brothers, Saxo Bank and Nordea.</p><p>In my role as Technology Director I have a wide range of responsibilities, with a common goal of growing and diverifying our offering while maintaining the quality and reputation that we have built.</p>
 
-# Windmill Crank Operator
-- company: Sir Putt-A-Lot's Merrie Olde Fun Centre
-  position: Safety Inspector
-  duration:  Jun, 1978 &mdash; Sept, 1979
-  summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
+- company: TecSphere UK Ltd.
+  position: Software Engineer
+  duration: 2004 &mdash; 2006
+  summary: As a software engineer at TecSphere UK I worked on various components of a Laboratory Information Management System (LIMS). Using the latest Java technologies, EJB3, Struts, etc... we were able to deliver a flexible platform for use within high throughput medical laboratories.
 
+- company: VisiTech International
+  position: R&amp;D Manager
+  duration: 2002 &mdash; 2004
+  summary: Reporting to the Managing Director, I was responsible for product development, quality control and the transition of products from design to production. These imaging products incorporate complex optical, mechanical and electronic parts and software for their automated control.
 
-# Front Desk Attendant
-- company: Simpson Lazer Tag
-  position: Front Desk Attendant
-  duration:   Jun, 1975  &mdash; May, 1978
-  summary: Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.
+- company: Leeds Univeristy
+  position: Research Fellow
+  duration: 1999 &mdash; 2002
+  summary: After finishing my PhD studies, I remained with the Physics department as a research fellow, developing new microscopy techiques and working on a book.

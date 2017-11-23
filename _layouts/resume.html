@@ -145,6 +145,25 @@
       <!-- end Recognition -->
       {% endif %}
 
+      {% if site.resume_section_publications %}
+      <!-- begin Publication -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Publications</h2>
+        </header>
+
+        {% for publication in site.data.publications %}
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="{{ publication.link }}">{{ publication.title }}</a></h3>
+          <p class="resume-item-summary">{{ publication.summary }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Recognition -->
+      {% endif %}
+
       {% if site.resume_section_associations %}
       <!-- begin Associations -->
       <section class="content-section">
@@ -220,11 +239,6 @@
       </section>
       <!-- end Print Social Links -->
       {% endif %}
-
-      <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
-      </footer>
 
     </div>
 
