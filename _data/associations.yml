@@ -1,9 +1,8 @@
 # Associations
 # comment out the urls if you do not wish to display them
 
-- organization: Symphony Software Foundation
-  role: At-Large Community Member
-  year: 2017 &mdash; Present
-  url: https://www.symphony.foundation/
-  summary: "<p>Symphony Software Foundation fosters open source collaboration within the the financial services industry. I joined as the first At-Large member (non fee-paying) Symphony Software Foundation in 2017.</p> <p>I am currently active in the Desktop Working Group, which is defining a common set of APIs for desktop containers. I am also a member of the Open Source Readiness Working Group which is defining common policies that enable greater open source engagement for financial services companies.</p>
-  <p>I have spoken about the benefits of open source at a number of Symphony meetings, and in my spare time I write bots and other tooling that helps foundation developers.</p>"
+- organization: FINOS
+  role: Board Member
+  year: 2019 &mdash; Present
+  url: https://www.finos.org/
+  summary: "<p>I am a Board Member of <a href="https://www.finos.org/">FINOS</a> (Fintech Open Source Foundation), an organisation that fosters open source collaboration within financial services. I represent the eleven 'silver level' members at the board.</p>"
