@@ -13,7 +13,7 @@ resume_avatar:                  "true"
 resume_name:                    "Colin Eberhardt"
 resume_title:                   "Technology Director, Scott Logic"
 resume_contact_email:           "ceberhardt@scottlogic.com"
-resume_header_intro: "<p>I am Technology Director at <a href="https://www.scottlogic.com/">Scott Logic</a>, a lively and fast-growing UK-based software consultancy that delivers bespoke software consultancy services to financial services and public sector organisations.</p><p>I am a Board Member of <a href="https://www.finos.org/">FINOS</a> (Fintech Open Source Foundation), an organisation that fosters open source collaboration within financial services. I represent the eleven 'silver level' members at the board.</p><p>I am a passionate technologist, author, blogger and speaker on a wide range of topics. I'm also an keen advocate of open source software and an active contributor.</p>"
+resume_header_intro: "<p>I am Technology Director at <a href=\"https://www.scottlogic.com/\">Scott Logic</a>, a lively and fast-growing UK-based software consultancy that delivers bespoke software consultancy services to financial services and public sector organisations.</p><p>I am a Board Member of <a href=\"https://www.finos.org/\">FINOS</a> (Fintech Open Source Foundation), an organisation that fosters open source collaboration within financial services. I represent the eleven 'silver level' members at the board.</p><p>I am a passionate technologist, author, blogger and speaker on a wide range of topics. I'm also an keen advocate of open source software and an active contributor.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
