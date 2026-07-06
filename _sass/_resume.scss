@@ -253,8 +253,16 @@
 .timeline-entry {
   position: relative;
   margin-bottom: .6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
 
   &:last-child { margin-bottom: 0; }
+}
+
+.timeline-entry-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .timeline-entry-dot {
@@ -318,6 +326,15 @@
   color: #666;
   line-height: 1.5;
   margin: .2rem 0 0;
+}
+
+.timeline-entry-photo {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 4px;
+  margin-top: .5rem;
+  flex-shrink: 0;
 }
 
 // footer styles

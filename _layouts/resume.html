@@ -265,6 +265,9 @@
                       <p class="timeline-entry-description">{{ entry.description }}</p>
                       {% endif %}
                     </div>
+                    {% if entry.photo and entry.photo != "" %}
+                    <img src="{{ entry.photo }}" alt="{{ entry.title }}" class="timeline-entry-photo">
+                    {% endif %}
                   </div>
                   {% endfor %}
                 </div>
