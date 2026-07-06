@@ -55,10 +55,10 @@
         </header>
 
         {% for job in site.data.experience %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+        <div class="resume-item{% if job.compact %} resume-item--compact{% endif %}" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
+          {% unless job.compact %}<p class="resume-item-copy">{{ job.summary }}</p>{% endunless %}
         </div><!-- end of resume-item -->
         {% endfor %}
 
@@ -222,6 +222,61 @@
 
       </section>
       <!-- end Links -->
+      {% endif %}
+
+      {% if site.resume_section_timeline %}
+      <!-- begin Timeline -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Timeline</h2>
+        </header>
+
+        <p class="timeline-summary">
+          I have published <strong>{{ site.data.timeline.summary.posts }} blog posts</strong>,
+          delivered <strong>{{ site.data.timeline.summary.talks }} talks</strong>,
+          appeared on <strong>{{ site.data.timeline.summary.podcasts }} podcasts</strong>
+          and published <strong>{{ site.data.timeline.summary.books }} books</strong>.
+        </p>
+
+        <div class="timeline">
+          {% for year_group in site.data.timeline.timeline %}
+          <div class="timeline-year-group">
+            <h3 class="timeline-year-heading">{{ year_group.year }}</h3>
+            <div class="timeline-year-body">
+              {% for month_group in year_group.months %}
+              <div class="timeline-month-group">
+                <div class="timeline-month-label">{{ month_group.month }}</div>
+                <div class="timeline-month-entries">
+                  {% for entry in month_group.entries %}
+                  <div class="timeline-entry timeline-entry--{{ entry.type }}">
+                    <div class="timeline-entry-dot"></div>
+                    <div class="timeline-entry-content">
+                      <span class="timeline-entry-badge">{{ entry.type }}</span>
+                      {% if entry.url and entry.url != "" %}
+                      <h4 class="timeline-entry-title"><a href="{{ entry.url }}">{{ entry.title }}</a></h4>
+                      {% else %}
+                      <h4 class="timeline-entry-title">{{ entry.title }}</h4>
+                      {% endif %}
+                      {% if entry.type == "talk" and entry.event != entry.title %}
+                      <p class="timeline-entry-meta">{{ entry.event }}</p>
+                      {% endif %}
+                      {% if entry.description and entry.description != "" %}
+                      <p class="timeline-entry-description">{{ entry.description }}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </section>
+      <!-- end Timeline -->
       {% endif %}
 
       {% if site.resume_print_social_links %}
