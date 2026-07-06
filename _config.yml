@@ -11,9 +11,9 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Colin Eberhardt"
-resume_title:                   "CTO, Scott Logic"
+resume_title:                   "CTO, Scott Logic  ·  FINOS Board Member"
 resume_contact_email:           "ceberhardt@scottlogic.com"
-resume_header_intro: "<p>I am CTO at <a href=\"https://www.scottlogic.com/\">Scott Logic</a>, a UK-based software consultancy that delivers bespoke software services to financial services and public sector organisations.</p><p>I am a Board Member of <a href=\"https://www.finos.org/\">FINOS</a> (Fintech Open Source Foundation), an organisation that fosters open source collaboration within financial services.</p><p>I am a passionate technologist, author, blogger and speaker on a wide range of topics, and an active open source contributor.</p>"
+resume_header_intro: "<p>I lead technology at <a href=\"https://www.scottlogic.com/\">Scott Logic</a>, a UK-based software consultancy delivering bespoke software to financial services and public sector. Board member of <a href=\"https://www.finos.org/\">FINOS</a>, shaping open source strategy for fintech. Technologist, author, blogger, and speaker.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
