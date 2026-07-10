@@ -275,10 +275,11 @@
   background: #ccc;
   border: 2px solid #fff;
 
-  .timeline-entry--talk &    { background: #2a7ae2; }
-  .timeline-entry--post &    { background: #888; }
-  .timeline-entry--podcast & { background: #7c3aed; }
-  .timeline-entry--book &    { background: #92400e; }
+  .timeline-entry--talk &       { background: #2a7ae2; }
+  .timeline-entry--post &       { background: #888; }
+  .timeline-entry--podcast &    { background: #7c3aed; }
+  .timeline-entry--book &       { background: #92400e; }
+  .timeline-entry--newsletter & { background: #059669; }
 }
 
 .timeline-entry-badge {
@@ -292,10 +293,11 @@
   margin-right: .3rem;
   vertical-align: middle;
 
-  .timeline-entry--talk &    { background: #e8f0fb; color: #2a7ae2; }
-  .timeline-entry--post &    { background: #f0f0f0; color: #777; }
-  .timeline-entry--podcast & { background: #f3e8ff; color: #7c3aed; }
-  .timeline-entry--book &    { background: #fef3c7; color: #92400e; }
+  .timeline-entry--talk &       { background: #e8f0fb; color: #2a7ae2; }
+  .timeline-entry--post &       { background: #f0f0f0; color: #777; }
+  .timeline-entry--podcast &    { background: #f3e8ff; color: #7c3aed; }
+  .timeline-entry--book &       { background: #fef3c7; color: #92400e; }
+  .timeline-entry--newsletter & { background: #d1fae5; color: #059669; }
 }
 
 .timeline-entry-title {

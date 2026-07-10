@@ -3,6 +3,7 @@ summary:
   talks: 83
   podcasts: 22
   books: 3
+  newsletters: 2
 timeline:
 - year: 2026
   months:
@@ -145,6 +146,12 @@ timeline:
       url: https://blog.scottlogic.com/2025/10/06/delegating-grunt-work.html
   - month: July
     entries:
+    - date: '2025-07-18'
+      type: newsletter
+      title: Augmented Coding
+      description: A hype-free weekly newsletter covering the latest news in AI-augmented
+        software development. 52 issues published in its first year.
+      url: https://augmentedcoding.dev/
     - date: '2025-07-07'
       type: post
       title: 'From Diligence to Exit: The Critical Role of Data in PE Investments'
@@ -1560,6 +1567,12 @@ timeline:
         create WebAssembly modules, using Emscripten, LLVM and AssemblyScript, comparing
         the tooling and performance.
       url: https://blog.scottlogic.com/2017/10/17/wasm-mandelbrot.html
+    - date: '2017-10-13'
+      type: newsletter
+      title: WasmWeekly
+      description: A community-driven weekly newsletter about WebAssembly. Ran from
+        October 2017 to November 2023, publishing 198 issues.
+      url: https://wasmweekly.news/
   - month: September
     entries:
     - date: '2017-09-14'
