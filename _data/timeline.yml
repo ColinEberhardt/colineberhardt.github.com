@@ -4,6 +4,7 @@ summary:
   podcasts: 22
   books: 3
   newsletters: 2
+  projects: 17
 timeline:
 - year: 2026
   months:
@@ -509,6 +510,12 @@ timeline:
         as a learning exercise, looking at the low-level prompts it uses to create
         these higher level capabilities.
       url: https://blog.scottlogic.com/2023/05/04/langchain-mini.html
+    - date: '2023-05-04'
+      type: project
+      title: langchain-mini
+      description: A minimal re-implementation of LangChain in ~100 lines of code.
+        ⭐ 256
+      url: https://github.com/ColinEberhardt/langchain-mini
     - date: '2023-05-02'
       type: podcast
       title: 'Beyond the Hype: Is generative AI coming for programming jobs?'
@@ -978,6 +985,12 @@ timeline:
       photo: ''
   - month: November
     entries:
+    - date: '2020-11-24'
+      type: project
+      title: ffmpeg-wasm-streaming-video-player
+      description: Streaming video transcoding in the browser using FFmpeg.wasm. ⭐
+        168
+      url: https://github.com/ColinEberhardt/ffmpeg-wasm-streaming-video-player
     - date: '2020-11-23'
       type: post
       title: In-browser transcoding of video files with FFmpeg and WebAssembly
@@ -1065,6 +1078,12 @@ timeline:
       url: https://blog.scottlogic.com/2020/05/01/rendering-one-million-points-with-d3.html
   - month: March
     entries:
+    - date: '2020-03-26'
+      type: project
+      title: d3fc-webgl-hathi-explorer
+      description: A T-SNE scatter plot of the HathiTrust dataset using D3FC's WebGL
+        series. ⭐ 106
+      url: https://github.com/ColinEberhardt/d3fc-webgl-hathi-explorer
     - date: '2020-03-03'
       type: talk
       title: Build Your Own WebAssembly Compiler
@@ -1105,6 +1124,12 @@ timeline:
   months:
   - month: December
     entries:
+    - date: '2019-12-31'
+      type: project
+      title: wasm-sudoku-solver
+      description: A WebAssembly-powered AR sudoku solver running entirely in the
+        browser. ⭐ 366
+      url: https://github.com/ColinEberhardt/wasm-sudoku-solver
     - date: '2019-12-24'
       type: post
       title: WebAssembly 2019 Year In Review
@@ -1251,6 +1276,12 @@ timeline:
         this runtime.
       url: https://www.youtube.com/watch?v=laM5bM_cMjA
       photo: ''
+    - date: '2019-04-24'
+      type: project
+      title: chasm
+      description: A simple compile-to-WebAssembly language, built as an educational
+        exercise. ⭐ 368
+      url: https://github.com/ColinEberhardt/chasm
     - date: '2019-04-18'
       type: post
       title: 'White Paper: Thinking differently - the cloud as a value driver'
@@ -1292,6 +1323,12 @@ timeline:
         and automation are a critical component when creating a successful open source
         project.
       url: https://blog.scottlogic.com/2018/12/14/automation-and-bots-for-open-source.html
+    - date: '2018-12-07'
+      type: project
+      title: awesome-public-streaming-datasets
+      description: A curated list of free public datasets that provide streaming data.
+        ⭐ 450
+      url: https://github.com/ColinEberhardt/awesome-public-streaming-datasets
     - date: '2018-12-03'
       type: post
       title: OpenFin Layouts added to StockFlux
@@ -1441,6 +1478,12 @@ timeline:
         and why WebAssembly is the answer.
       url: https://www.youtube.com/watch?v=7jVkRgT-eEc
       photo: ''
+    - date: '2018-05-04'
+      type: project
+      title: applause-button
+      description: A zero-configuration medium-style applause/clap button for web
+        pages. ⭐ 447
+      url: https://github.com/ColinEberhardt/applause-button
   - month: April
     entries:
     - date: '2018-04-26'
@@ -1506,6 +1549,11 @@ timeline:
         application, which is why I’ve been spending my evenings working on a CHIP-8
         emulator ... and learning Rust!
       url: https://blog.scottlogic.com/2017/12/13/chip8-emulator-webassembly-rust.html
+    - date: '2017-12-08'
+      type: project
+      title: wasm-rust-chip8
+      description: A WebAssembly CHIP-8 emulator written in Rust. ⭐ 274
+      url: https://github.com/ColinEberhardt/wasm-rust-chip8
   - month: November
     entries:
     - date: '2017-11-29'
@@ -1573,6 +1621,12 @@ timeline:
       description: A community-driven weekly newsletter about WebAssembly. Ran from
         October 2017 to November 2023, publishing 198 issues.
       url: https://wasmweekly.news/
+    - date: '2017-10-06'
+      type: project
+      title: d3-wasm-force
+      description: A re-implementation of d3-force using WebAssembly for physics simulation.
+        ⭐ 109
+      url: https://github.com/ColinEberhardt/d3-wasm-force
   - month: September
     entries:
     - date: '2017-09-14'
@@ -1806,6 +1860,12 @@ timeline:
         post by Shuhei Kagawa that describes the development of a simple plugin for
         Angular 2 code generation.
       url: https://blog.scottlogic.com/2016/06/22/xslt-inspired-ast-transforms.html
+    - date: '2016-06-22'
+      type: project
+      title: json-transforms
+      description: A recursive, pattern-matching approach to transforming JSON structures.
+        ⭐ 146
+      url: https://github.com/ColinEberhardt/json-transforms
     - date: '2016-06-10'
       type: post
       title: Six tips for cleaner javascript promises
@@ -2001,6 +2061,12 @@ timeline:
         some more complex RAC3 usages within the context of an application built using
         the Model-View-ViewModel (MVVM) pattern.
       url: https://blog.scottlogic.com/2015/05/15/mvvm-reactive-cocoa-3.html
+    - date: '2015-05-15'
+      type: project
+      title: ReactiveTwitterSearch
+      description: A ReactiveCocoa 4.0 MVVM Twitter search example app for iOS. ⭐
+        214
+      url: https://github.com/ColinEberhardt/ReactiveTwitterSearch
   - month: April
     entries:
     - date: '2015-04-28'
@@ -2038,6 +2104,12 @@ timeline:
       photo: ''
   - month: March
     entries:
+    - date: '2015-03-31'
+      type: project
+      title: ReactNative-PropertyFinder
+      description: A property finder app written using React Native, one of the earliest
+        React Native tutorials. ⭐ 272
+      url: https://github.com/ColinEberhardt/ReactNative-PropertyFinder
     - date: '2015-03-26'
       type: post
       title: Introducing React Native
@@ -2222,6 +2294,12 @@ timeline:
       description: This blog post looks out how Swift makes the combination of ReactiveCocoa
         and MVVM even better ...
       url: https://blog.scottlogic.com/2014/07/24/mvvm-reactivecocoa-swift.html
+    - date: '2014-07-20'
+      type: project
+      title: ReactiveSwiftFlickrSearch
+      description: A Swift MVVM Flickr search app using ReactiveCocoa — widely referenced
+        as an early Swift MVVM example. ⭐ 372
+      url: https://github.com/ColinEberhardt/ReactiveSwiftFlickrSearch
     - date: '2014-07-10'
       type: post
       title: A Statistical Comparison of the iOS and Android Stores
@@ -2263,6 +2341,12 @@ timeline:
         ViewModels to UITableViews without the need for the usual datasource / delegate
         boiler-plate.
       url: https://blog.scottlogic.com/2014/05/11/reactivecocoa-tableview-binding.html
+    - date: '2014-05-11'
+      type: project
+      title: CETableViewBinding
+      description: A binding helper making it easier to bind UITableView to ReactiveCocoa
+        ViewModels. ⭐ 119
+      url: https://github.com/ColinEberhardt/CETableViewBinding
   - month: April
     entries:
     - date: '2014-04-12'
@@ -2370,6 +2454,12 @@ timeline:
       description: Authored four chapters covering UIKit Dynamic, TextKit and ViewController
         transitions. Published by Ray Wenderlich.
       url: https://store.raywenderlich.com/products/ios-7-by-tutorials
+    - date: '2013-09-10'
+      type: project
+      title: VCTransitionsLibrary
+      description: A collection of iOS 7 animation and interaction controllers for
+        view controller transitions. ⭐ 4522
+      url: https://github.com/ColinEberhardt/VCTransitionsLibrary
   - month: August
     entries:
     - date: '2013-08-09'
@@ -2451,6 +2541,12 @@ timeline:
       description: In the past few months I have been immersing myself into the world
         of iOS development.
       url: https://blog.scottlogic.com/2013/02/15/linq-to-objective-c.html
+    - date: '2013-02-14'
+      type: project
+      title: LinqToObjectiveC
+      description: Brings a LINQ-style fluent query API to Objective-C collections.
+        ⭐ 715
+      url: https://github.com/ColinEberhardt/LinqToObjectiveC
   - month: January
     entries:
     - date: '2013-01-07'
@@ -2507,6 +2603,14 @@ timeline:
         new article on CodeProject</a>, this latest article tackles the migration
         of a gesture-drive application from Windows Phone to Windows 8.
       url: https://blog.scottlogic.com/2012/10/12/clearer-a-gesture-driven-windows-8-to-do-application.html
+  - month: September
+    entries:
+    - date: '2012-09-20'
+      type: project
+      title: iOS-ClearStyle
+      description: A gesture-driven iOS to-do list modelled on the Clear app, with
+        swipe-to-delete and pull-to-add. ⭐ 193
+      url: https://github.com/ColinEberhardt/iOS-ClearStyle
   - month: August
     entries:
     - date: '2012-08-29'
