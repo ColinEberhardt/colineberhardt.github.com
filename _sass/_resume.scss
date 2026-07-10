@@ -192,6 +192,37 @@
   margin: 0 0 1.75rem;
 }
 
+.timeline-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-filter {
+  @include sans;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: .25rem .65rem;
+  border: 1px solid #ddd;
+  @include border-radius(999px);
+  background: #f5f5f5;
+  color: #999;
+  cursor: pointer;
+
+  &:hover { border-color: #bbb; color: #555; }
+
+  &.timeline-filter--active                       { background: #555;     color: #fff; border-color: #555;     }
+  &[data-type="post"].timeline-filter--active     { background: #888;     color: #fff; border-color: #888;     }
+  &[data-type="talk"].timeline-filter--active     { background: #2a7ae2;  color: #fff; border-color: #2a7ae2;  }
+  &[data-type="podcast"].timeline-filter--active  { background: #7c3aed;  color: #fff; border-color: #7c3aed;  }
+  &[data-type="book"].timeline-filter--active     { background: #92400e;  color: #fff; border-color: #92400e;  }
+  &[data-type="newsletter"].timeline-filter--active { background: #059669; color: #fff; border-color: #059669; }
+  &[data-type="project"].timeline-filter--active  { background: #0891b2;  color: #fff; border-color: #0891b2;  }
+}
+
 .timeline {
   position: relative;
 }

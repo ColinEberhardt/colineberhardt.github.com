@@ -241,6 +241,16 @@
           and created <strong>numerous open-source projects</strong>.
         </p>
 
+        <div class="timeline-filters no-print">
+          <button class="timeline-filter timeline-filter--active" data-type="all">All</button>
+          <button class="timeline-filter" data-type="post">Posts</button>
+          <button class="timeline-filter" data-type="talk">Talks</button>
+          <button class="timeline-filter" data-type="podcast">Podcasts</button>
+          <button class="timeline-filter" data-type="book">Books</button>
+          <button class="timeline-filter" data-type="newsletter">Newsletters</button>
+          <button class="timeline-filter" data-type="project">Projects</button>
+        </div>
+
         <div class="timeline">
           {% for year_group in site.data.timeline.timeline %}
           <div class="timeline-year-group">
@@ -301,6 +311,37 @@
       {% endif %}
 
     </div>
+
+  <script>
+    (function () {
+      var filters = document.querySelectorAll('.timeline-filter');
+      filters.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          filters.forEach(function (b) { b.classList.remove('timeline-filter--active'); });
+          btn.classList.add('timeline-filter--active');
+          var type = btn.dataset.type;
+
+          document.querySelectorAll('.timeline-entry').forEach(function (entry) {
+            entry.style.display = (type === 'all' || entry.classList.contains('timeline-entry--' + type)) ? '' : 'none';
+          });
+
+          document.querySelectorAll('.timeline-month-group').forEach(function (group) {
+            var hasVisible = Array.from(group.querySelectorAll('.timeline-entry')).some(function (e) {
+              return e.style.display !== 'none';
+            });
+            group.style.display = hasVisible ? '' : 'none';
+          });
+
+          document.querySelectorAll('.timeline-year-group').forEach(function (group) {
+            var hasVisible = Array.from(group.querySelectorAll('.timeline-month-group')).some(function (m) {
+              return m.style.display !== 'none';
+            });
+            group.style.display = hasVisible ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
 
   </body>
 
