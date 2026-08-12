@@ -1,5 +1,5 @@
 summary:
-  posts: 307
+  posts: 308
   talks: 83
   podcasts: 22
   books: 3
@@ -8,6 +8,19 @@ summary:
 timeline:
 - year: 2026
   months:
+  - month: July
+    entries:
+    - date: '2026-07-27'
+      type: post
+      title: The Rise of Open Weights; And the fall of commercial AI?
+      description: The frontier labs have grown at remarkable speed, yet the gap between
+        their models and the freely available open weights alternatives — predominantly
+        emanating from China — has all but closed. This post traces that story from
+        the founding of OpenAI in 2015, through the LLaMA leak and DeepSeek's breakthrough,
+        to a current crop of models that match frontier performance at a fraction
+        of the cost, and asks whether the commercial labs can capitalise on the technology
+        before it commoditises beneath them.
+      url: https://blog.scottlogic.com/2026/07/27/rise-of-open-weights.html
   - month: June
     entries:
     - date: '2026-06-26'
@@ -27,7 +40,7 @@ timeline:
         by AI — from autocomplete in 2022 to agentic systems by 2025. This talk asks
         what the discipline looks like when these trends fully play out, and outlines
         principles for navigating a period of fundamental transformation.
-      url: ''
+      url: https://www.youtube.com/watch?v=M4G2oipL4lE
       photo: ''
     - date: '2026-06-05'
       type: talk
