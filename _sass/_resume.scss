@@ -388,6 +388,17 @@
   flex-shrink: 0;
 }
 
+@include media_mobile {
+  .timeline-entry {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .timeline-entry-photo {
+    max-width: 100%;
+  }
+}
+
 // footer styles
 
 .page-footer {
