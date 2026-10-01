@@ -363,6 +363,22 @@
   margin: .2rem 0 0;
 }
 
+.timeline-entry-repeat {
+  @include sans;
+  font-size: .65rem;
+  color: #999;
+  margin-left: .4rem;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.timeline-entry-also {
+  @include sans;
+  font-size: .72rem;
+  color: #999;
+  margin: .2rem 0 0;
+}
+
 .timeline-entry-photo {
   display: block;
   width: 100%;

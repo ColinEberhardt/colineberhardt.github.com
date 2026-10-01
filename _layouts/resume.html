@@ -270,11 +270,35 @@
                       {% else %}
                       <h4 class="timeline-entry-title">{{ entry.title }}</h4>
                       {% endif %}
+                      {% assign is_repeat = false %}
+                      {% if entry.type == "talk" %}
+                        {% assign talk_key = "|" | append: entry.title | append: "|" %}
+                        {% if seen_talks contains talk_key %}
+                          {% assign is_repeat = true %}
+                        {% else %}
+                          {% assign seen_talks = seen_talks | append: talk_key %}
+                        {% endif %}
+                      {% endif %}
+                      {% if is_repeat %}
+                      <span class="timeline-entry-repeat" title="A repeat of a talk given more recently">&#8635; repeat</span>
+                      {% endif %}
                       {% if entry.type == "talk" and entry.event != entry.title %}
                       <p class="timeline-entry-meta">{{ entry.event }}</p>
                       {% endif %}
-                      {% if entry.description and entry.description != "" %}
+                      {% if is_repeat == false and entry.description and entry.description != "" %}
                       <p class="timeline-entry-description">{{ entry.description }}</p>
+                      {% endif %}
+                      {% if entry.type == "talk" and is_repeat == false %}
+                        {% assign other_events = "" %}
+                        {% for yg in site.data.timeline.timeline %}{% for mg in yg.months %}{% for other in mg.entries %}
+                          {% if other.type == "talk" and other.title == entry.title and other.date != entry.date and other.event and other.event != "" and other.event != other.title and other.event != "Unknown" %}
+                            {% if other_events != "" %}{% assign other_events = other_events | append: ", " %}{% endif %}
+                            {% assign other_events = other_events | append: other.event %}
+                          {% endif %}
+                        {% endfor %}{% endfor %}{% endfor %}
+                        {% if other_events != "" %}
+                      <p class="timeline-entry-also">Also presented at {{ other_events }}</p>
+                        {% endif %}
                       {% endif %}
                     </div>
                     {% if entry.photo and entry.photo != "" %}
