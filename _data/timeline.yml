@@ -1,6 +1,6 @@
 summary:
   posts: 308
-  talks: 83
+  talks: 85
   podcasts: 22
   books: 3
   newsletters: 2
@@ -8,6 +8,30 @@ summary:
 timeline:
 - year: 2026
   months:
+  - month: September
+    entries:
+    - date: '2026-09-01'
+      type: talk
+      title: Agentic AI and the Future of Software Development
+      event: Mastercard
+      description: Software development has undergone rapid, compounding shifts driven
+        by AI — from autocomplete in 2022 to agentic systems by 2025. This talk asks
+        what the discipline looks like when these trends fully play out, and outlines
+        principles for navigating a period of fundamental transformation.
+      url: ''
+      photo: ''
+  - month: August
+    entries:
+    - date: '2026-08-01'
+      type: talk
+      title: Agentic AI and the Future of Software Development
+      event: Confirma
+      description: Software development has undergone rapid, compounding shifts driven
+        by AI — from autocomplete in 2022 to agentic systems by 2025. This talk asks
+        what the discipline looks like when these trends fully play out, and outlines
+        principles for navigating a period of fundamental transformation.
+      url: ''
+      photo: images/talks/talk-confirma-2026.jpg
   - month: July
     entries:
     - date: '2026-07-27'
