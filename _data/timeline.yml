@@ -1,6 +1,6 @@
 summary:
   posts: 308
-  talks: 85
+  talks: 86
   podcasts: 22
   books: 3
   newsletters: 2
@@ -8,6 +8,17 @@ summary:
 timeline:
 - year: 2026
   months:
+  - month: October
+    entries:
+    - date: '2026-10-15'
+      type: talk
+      title: 'The Rise of Open Weights: Is Commercial AI Losing Its Moat?'
+      event: North Community Conf
+      description: This talk explores the rise of open-weight AI models, why they're
+        challenging proprietary models, and the practical considerations for enterprises
+        looking to deploy them in production.
+      url: ''
+      photo: images/talks/talk-north-community-conf-2026.jpg
   - month: September
     entries:
     - date: '2026-09-01'
